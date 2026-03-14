@@ -3,16 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>Deepanshu Portfolio</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
+
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
 </head>
 
-<body style="background:black;color:white;font-family:sans-serif">
+<body style="background:black">
 
 <div id="root"></div>
 
-<script src="App.js"></script>
+<script type="text/javascript">
+
+function App(){
+return React.createElement("h1",{style:{color:"white",textAlign:"center",marginTop:"100px"}}, "Deepanshu Portfolio Loading...");
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+React.createElement(App)
+)
+
+</script>
 
 </body>
 </html>
