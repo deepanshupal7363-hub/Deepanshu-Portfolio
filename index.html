@@ -8,6 +8,7 @@
 
 <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
 
 </head>
 
@@ -17,12 +18,19 @@
 
 <script type="text/javascript">
 
-function App(){
-return React.createElement("h1",{style:{color:"white",textAlign:"center",marginTop:"100px"}}, "Deepanshu Portfolio Loading...");
+const { motion } = window["framer-motion"]
+
+function PortfolioWebsite(){
+return React.createElement(
+"div",
+{style:{color:"white",textAlign:"center",marginTop:"120px"}},
+React.createElement("h1",null,"Deepanshu Video Editor Portfolio"),
+React.createElement("p",null,"Portfolio loading... Your React version will be added next.")
+)
 }
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-React.createElement(App)
+React.createElement(PortfolioWebsite)
 )
 
 </script>
